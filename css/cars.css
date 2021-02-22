@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  .bg-4 {
+    background-image: url("../images/bg-image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .card {
+    display: inline-block;
+    border: 4px solid rgb(0, 10, 146);
+    border-radius: 8px;
+    width: 400px;
+    margin: 20px;
+    justify-items: left;
+  }
+
+  .card:hover {
+    box-shadow: 0 0 3px 2px rgb(0, 10, 146);
+}
+
+  .card-title, .card-text {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  @media (max-width: 600px) {
+    .card  {
+         width: 250px;
+    }
+  }

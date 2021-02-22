@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  .navbar {
+      background-color: rgb(255, 255, 255, 0.6);
+  }
+
+  .fixed-top.scrolled {
+    background-color: white !important;
+    transition: background-color 200ms linear;
+  }
+
+  .nav-item .nav-link {
+      font-family: Calibri;
+      font-size: 18px;
+      font-weight: 600;
+      margin-right: 10px;
+      margin-left: 20px;
+      border-bottom :2px groove transparent;
+    border-radius: 4px;
+  }
+
+  .nav-item .nav-link:link {
+     color: rgb(0, 0, 54);
+  }
+
+  .nav-item .nav-link:visited {
+    color: rgb(0, 0, 54);
+ }
+
+ .nav-item .nav-link:hover {
+   color: rgb(0, 10, 146);
+   border-color: rgb(0, 10, 146);
+ }
+
+ .nav-item .nav-link:active {
+    color: red;
+ }
+
+  .bg-1 {
+    padding: 0%;
+  }
+
+  .bg-2 {
+   padding-top: 120px;
+   padding-bottom: 120px;
+  }
+
+  .bg-3 {
+    padding: 0%;
+  }
+
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .carousel-item img {
+          height: 680px;
+      }
+
+   .carousel-control-prev img, .carousel-control-next img {
+       border: 3px solid rgb(0, 0, 80);
+       border-radius: 50%;
+       padding: 5px;
+   }
+ 
+   .about-peugeot {
+       margin-left: 18%;
+       margin-right: 5%;
+   }
+
+   .main-text {
+       font-family: Arial, Helvetica, sans-serif;
+       text-shadow: 0 0 3px blue;
+       font-weight: 600;
+
+   }
+
+   .aboutp {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+   }
+
+   #imgspan  {
+    border-radius: 15px 50px;
+   }
+
+   @media (max-width: 600px) {
+
+    iframe {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .navbar {
+    background-color: white;
+    }
+
+    .about-peugeot {
+      margin: 0 1% 0 1%;
+    }
+
+    .aboutp  {
+     text-align: left;
+    }
+
+    .nav-item .nav-link {
+    margin-left: 6px;
+    }
+
+    .nav-item .nav-link:hover {
+        width: 60px;
+      }
+
+    .carousel-item img {
+        height: 400px;
+    }
+   }
+
+   @media (max-width:768px) {
+    .about-peugeot {
+        margin: 0 1% 0 1%;
+      }
+   }
+
+   @media (min-width:769px) and (max-width:1024px) {
+    .about-peugeot {
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+ 
+}
